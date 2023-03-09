@@ -38,6 +38,7 @@ class FirebaseDB() {
                     locals.addAll(Meal.mealAllInstances)
                     for (x in locals) {
                         if (keys.contains(x.mealId)) {
+                            //check
                         } else {
                             Meal.killMeal(x.mealId)
                         }
