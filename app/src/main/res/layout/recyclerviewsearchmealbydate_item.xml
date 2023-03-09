@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:columnCount="3"
+    android:orientation="horizontal">
+
+    <TextView
+    	android:id="@+id/searchMealByDateMealIdView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/searchMealByDateMealNameView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/searchMealByDateCaloriesView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/searchMealByDateDatesView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <ImageView
+		android:id="@+id/searchMealByDateImagesView"
+		android:layout_width="50dp"
+		android:layout_height="50dp"
+		android:layout_span="4" />
+    <TextView
+    	android:id="@+id/searchMealByDateAnalysisView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/searchMealByDateUserNameView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+
+</GridLayout> 
+

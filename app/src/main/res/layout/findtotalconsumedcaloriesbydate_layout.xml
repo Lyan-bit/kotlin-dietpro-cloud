@@ -1,0 +1,74 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    tools:context=".FindTotalConsumedCaloriesByDateFragment">
+		    <TableRow>
+				 <TextView
+				             android:id="@+id/findTotalConsumedCaloriesByDateMealsLabel"
+				             android:textStyle="bold"
+				             android:background="#EEFFBB"
+				             android:text="Meals:" />
+				 <Spinner
+				             android:id="@+id/findTotalConsumedCaloriesByDateMealsSpinner"
+				             android:layout_width="fill_parent"
+				             android:layout_height="wrap_content"
+				             android:layout_span="4" />
+			</TableRow>
+
+		    <TableRow>
+				 <TextView
+				             android:id="@+id/findTotalConsumedCaloriesByDateUserLabel"
+				             android:textStyle="bold"
+				             android:background="#EEFFBB"
+				             android:text="User:" />
+				 <Spinner
+				             android:id="@+id/findTotalConsumedCaloriesByDateUserSpinner"
+				             android:layout_width="fill_parent"
+				             android:layout_height="wrap_content"
+				             android:layout_span="4" />
+			</TableRow>
+
+	<TableRow>
+	<TextView
+		android:id="@+id/findTotalConsumedCaloriesByDateDatesLabel"
+		android:textStyle="bold"
+		android:background="#EEFFBB"
+		android:text="Dates:" />
+	<EditText
+		android:id="@+id/findTotalConsumedCaloriesByDateDatesField"
+		android:layout_span="4" />
+	</TableRow>
+	<TableRow>
+	<Button
+		android:id="@+id/findTotalConsumedCaloriesByDateOK"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="#AAAAFF"
+		android:layout_column="1"
+		android:text="OK"
+		android:onClick="findTotalConsumedCaloriesByDateOK" />
+	<Button
+		android:id="@+id/findTotalConsumedCaloriesByDateCancel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="#FFAAAA"
+		android:layout_column="3"
+		android:text="Cancel"
+		android:onClick="findTotalConsumedCaloriesByDateCancel" />
+	</TableRow>
+						    
+	<TableRow>
+	<TextView
+		android:id="@+id/findTotalConsumedCaloriesByDateResultLabel"
+		android:textStyle="bold"
+		android:background="#EEFFBB"
+		android:text="Result:" />
+	<TextView
+		android:id="@+id/findTotalConsumedCaloriesByDateResult"
+		android:textStyle="bold"
+		android:layout_span="4" />
+	</TableRow>
+
+</TableLayout>

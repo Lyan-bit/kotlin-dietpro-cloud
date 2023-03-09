@@ -1,0 +1,143 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    tools:context=".SearchMealByDateFragment" >
+    
+
+    <TableRow>
+	     <TextView
+	         android:id="@+id/searchMealByDateLabel"
+             android:textStyle="bold"
+             android:background="#EEFFBB"
+	         android:text="Dates:" />
+	        
+	    <EditText
+	         android:id="@+id/searchMealByDateField"
+			android:hint="DD-MM-YYYY"
+	         android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+        <TextView
+            android:id="@+id/searchMealByDateSpinnerLabel"
+            android:textStyle="bold"
+            android:background="#EEFFBB"
+            android:text="searchMealByDate:" />
+        <Spinner
+            android:id="@+id/searchMealByDateSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="4" />
+        </TableRow>
+    <TableRow>
+      <TextView
+		   android:id="@+id/searchMealByDatemealIdLabel"
+		   android:textStyle="bold"
+		   android:background="#EEFFBB"
+		   android:text="MealId:" />
+		
+	  <TextView
+		   android:id="@+id/searchMealByDatemealIdView"
+		   android:textStyle="bold"
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+      <TextView
+		   android:id="@+id/searchMealByDatemealNameLabel"
+		   android:textStyle="bold"
+		   android:background="#EEFFBB"
+		   android:text="MealName:" />
+		
+	  <TextView
+		   android:id="@+id/searchMealByDatemealNameView"
+		   android:textStyle="bold"
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+      <TextView
+		   android:id="@+id/searchMealByDatecaloriesLabel"
+		   android:textStyle="bold"
+		   android:background="#EEFFBB"
+		   android:text="Calories:" />
+		
+	  <TextView
+		   android:id="@+id/searchMealByDatecaloriesView"
+		   android:textStyle="bold"
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+      <TextView
+		   android:id="@+id/searchMealByDatedatesLabel"
+		   android:textStyle="bold"
+		   android:background="#EEFFBB"
+		   android:text="Dates:" />
+		
+	  <TextView
+		   android:id="@+id/searchMealByDatedatesView"
+		   android:textStyle="bold"
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+					  <TextView
+					       android:id="@+id/searchMealByDateimagesLabel"
+					       android:textStyle="bold"
+					       android:background="#EEFFBB"
+					       android:text="Image:" />
+					  <ImageView
+					        android:id="@+id/searchMealByDateimagesImageView"
+					        tools:srcCompat="@tools:sample/avatars"
+					        android:layout_width="fill_parent"
+					        android:layout_height="300dp"
+						    android:layout_span="4" />
+				     </TableRow>
+				     
+    <TableRow>
+      <TextView
+		   android:id="@+id/searchMealByDateanalysisLabel"
+		   android:textStyle="bold"
+		   android:background="#EEFFBB"
+		   android:text="Analysis:" />
+		
+	  <TextView
+		   android:id="@+id/searchMealByDateanalysisView"
+		   android:textStyle="bold"
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+      <TextView
+		   android:id="@+id/searchMealByDateuserNameLabel"
+		   android:textStyle="bold"
+		   android:background="#EEFFBB"
+		   android:text="UserName:" />
+		
+	  <TextView
+		   android:id="@+id/searchMealByDateuserNameView"
+		   android:textStyle="bold"
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+        <Button
+            android:id="@+id/searchMealByDateOK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:background="#AAAAFF"
+            android:text="OK"
+            android:onClick="searchMealByDateOK"
+            />
+        <Button
+            android:id="@+id/searchMealByDateCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:background="#FFAAAA"
+            android:text="Cancel"
+            android:onClick="searchMealByDateCancel"
+            />
+    </TableRow>
+</TableLayout>
+</ScrollView>

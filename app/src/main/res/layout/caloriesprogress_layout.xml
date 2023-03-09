@@ -1,0 +1,78 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    tools:context=".CaloriesProgressFragment">
+		    <TableRow>
+				 <TextView
+				             android:id="@+id/caloriesProgressUserLabel"
+				             android:textStyle="bold"
+				             android:background="#EEFFBB"
+				             android:text="User:" />
+				 <Spinner
+				             android:id="@+id/caloriesProgressUserSpinner"
+				             android:layout_width="fill_parent"
+				             android:layout_height="wrap_content"
+				             android:layout_span="4" />
+			</TableRow>
+
+<TableRow>
+    <TextView
+        android:id="@+id/progressBarLabel"
+        android:hint="Target calories"
+        android:textStyle="bold"
+        android:background="#EEFFBB"
+        android:text="Progress Bar:" />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/CircularDeterminateProgressBar"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+</TableRow>
+
+<TableRow>
+    <TextView
+        android:id="@+id/percentProgressBarLabel"
+        android:hint="Target calories"
+        android:textStyle="bold"
+        android:background="#EEFFBB"
+        android:text="Percent of consumed calories:" />
+    <TextView
+        android:id="@+id/percentProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+</TableRow>
+	<TableRow>
+	<Button
+		android:id="@+id/caloriesProgressOK"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="#AAAAFF"
+		android:layout_column="1"
+		android:text="OK"
+		android:onClick="caloriesProgressOK" />
+	<Button
+		android:id="@+id/caloriesProgressCancel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="#FFAAAA"
+		android:layout_column="3"
+		android:text="Cancel"
+		android:onClick="caloriesProgressCancel" />
+	</TableRow>
+						    
+	<TableRow>
+	<TextView
+		android:id="@+id/caloriesProgressResultLabel"
+		android:textStyle="bold"
+		android:background="#EEFFBB"
+		android:text="Result:" />
+	<TextView
+		android:id="@+id/caloriesProgressResult"
+		android:textStyle="bold"
+		android:layout_span="4" />
+	</TableRow>
+
+</TableLayout>

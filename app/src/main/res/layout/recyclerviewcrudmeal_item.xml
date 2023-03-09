@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:columnCount="3"
+    android:orientation="horizontal">
+
+    <TextView
+    	android:id="@+id/crudMealMealIdView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/crudMealMealNameView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/crudMealCaloriesView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/crudMealDatesView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <ImageView
+		android:id="@+id/crudMealImagesView"
+		android:layout_width="50dp"
+		android:layout_height="50dp"
+		android:layout_span="4" />
+    <TextView
+    	android:id="@+id/crudMealAnalysisView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/crudMealUserNameView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+
+</GridLayout> 
+

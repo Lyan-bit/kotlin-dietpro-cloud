@@ -1,0 +1,154 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    tools:context=".EditMealFragment" >
+
+    <TableRow>
+        <TextView
+            android:id="@+id/crudMealLabel"
+            android:textStyle="bold"
+            android:background="#EEFFBB"
+            android:text="Meal:" />
+        <Spinner
+            android:id="@+id/crudMealSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="4" />
+        </TableRow>
+    <TableRow>
+      <TextView
+		   android:id="@+id/crudMealmealIdLabel"
+		   android:textStyle="bold"
+		   android:background="#EEFFBB"
+		   android:text="MealId:" />
+		
+	  <EditText
+		   android:id="@+id/crudMealmealIdField"
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+      <TextView
+		   android:id="@+id/crudMealmealNameLabel"
+		   android:textStyle="bold"
+		   android:background="#EEFFBB"
+		   android:text="MealName:" />
+		
+	  <EditText
+		   android:id="@+id/crudMealmealNameField"
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+      <TextView
+		   android:id="@+id/crudMealcaloriesLabel"
+		   android:textStyle="bold"
+		   android:background="#EEFFBB"
+		   android:text="Calories:" />
+		
+	  <EditText
+		   android:id="@+id/crudMealcaloriesField"
+		android:inputType="number|numberDecimal"
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+      <TextView
+		   android:id="@+id/crudMealdatesLabel"
+		   android:textStyle="bold"
+		   android:background="#EEFFBB"
+		   android:text="Dates:" />
+		
+	  <EditText
+		   android:id="@+id/crudMealdatesField"
+		android:hint="DD-MM-YYYY"
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+			  <TextView
+			       android:id="@+id/crudMealimagesLabel"
+			       android:textStyle="bold"
+			       android:background="#EEFFBB"
+			       android:text="Image:" />
+			  <ImageView
+			        android:id="@+id/crudMealimagesImageView"
+			        tools:srcCompat="@tools:sample/avatars"
+			        android:layout_width="fill_parent"
+			        android:layout_height="300dp"
+				    android:layout_span="4" />
+		     </TableRow>
+		     
+		        <TableRow>
+		            <Button
+		                android:id="@+id/buttonPickPhoto"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:background="#AAAAFF"
+		                android:layout_column="1"
+		                android:text="Pick Photo" 
+		                android:onClick="onPickImage"/>
+		            <Button
+		                android:id="@+id/buttonTakePhoto"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:background="#AAAAFF"
+		                android:layout_column="3"
+		                android:text="Take Photo"
+		                android:onClick="onTakeImage" />
+		        </TableRow>
+    <TableRow>
+		<TextView
+			  android:id="@+id/crudMealanalysisLabel"
+								android:textStyle="bold"
+			  android:background="#EEFFBB"
+			  android:text="Analysis:" />
+								
+		<TextView
+			 android:id="@+id/crudMealanalysisView"
+			 android:textStyle="bold"
+			 android:layout_span="4" />
+		</TableRow>	
+    <TableRow>
+      <TextView
+		   android:id="@+id/crudMealuserNameLabel"
+		   android:textStyle="bold"
+		   android:background="#EEFFBB"
+		   android:text="UserName:" />
+		
+	  <EditText
+		   android:id="@+id/crudMealuserNameField"
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+		<Button
+            android:id="@+id/crudMealSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:background="#AAAAFF"
+            android:text="Search"
+            android:onClick="crudMealSearch"
+            />		    
+        <Button
+            android:id="@+id/crudMealOK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:background="#AAAAFF"
+            android:text="OK"
+            android:onClick="crudMealOK"
+            />
+        <Button
+            android:id="@+id/crudMealCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:background="#FFAAAA"
+            android:text="Cancel"
+            android:onClick="crudMealCancel"
+            />
+    </TableRow>
+</TableLayout>
+</ScrollView>

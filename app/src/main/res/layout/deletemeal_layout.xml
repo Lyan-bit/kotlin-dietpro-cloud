@@ -1,0 +1,53 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    tools:context=".DeleteMealFragment" >
+
+    <TableRow>
+        <TextView
+            android:id="@+id/crudMealmealIdLabel"
+            android:textStyle="bold"
+            android:background="#EEFFBB"
+            android:text="mealId:" />
+        
+        <EditText
+            android:id="@+id/crudMealmealIdField"
+            android:layout_span="4" />
+    </TableRow>
+
+
+    <TableRow>
+        <TextView
+            android:id="@+id/crudMealLabel"
+            android:textStyle="bold"
+            android:background="#EEFFBB"
+            android:text="Meal:" />
+        <Spinner
+            android:id="@+id/crudMealSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="4" />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/crudMealOK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:background="#AAAAFF"
+            android:text="OK"
+            android:onClick="crudMealOK"
+            />
+        <Button
+            android:id="@+id/crudMealCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:background="#FFAAAA"
+            android:text="Cancel"
+            android:onClick="crudMealCancel"
+            />
+    </TableRow>
+</TableLayout>

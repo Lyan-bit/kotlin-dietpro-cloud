@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:columnCount="3"
+    android:orientation="horizontal">
+
+    <TextView
+    	android:id="@+id/listUserUserNameView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/listUserGenderView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/listUserHeightsView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/listUserWeightsView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/listUserActivityLevelView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/listUserAgeView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/listUserTargetCaloriesView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/listUserTotalConsumedCaloriesView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/listUserBmrView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+
+</GridLayout> 
+

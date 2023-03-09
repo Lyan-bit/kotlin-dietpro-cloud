@@ -1,0 +1,51 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    tools:context=".FindBMRFragment">
+		    <TableRow>
+				 <TextView
+				             android:id="@+id/findBMRUserLabel"
+				             android:textStyle="bold"
+				             android:background="#EEFFBB"
+				             android:text="User:" />
+				 <Spinner
+				             android:id="@+id/findBMRUserSpinner"
+				             android:layout_width="fill_parent"
+				             android:layout_height="wrap_content"
+				             android:layout_span="4" />
+			</TableRow>
+
+	<TableRow>
+	<Button
+		android:id="@+id/findBMROK"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="#AAAAFF"
+		android:layout_column="1"
+		android:text="OK"
+		android:onClick="findBMROK" />
+	<Button
+		android:id="@+id/findBMRCancel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="#FFAAAA"
+		android:layout_column="3"
+		android:text="Cancel"
+		android:onClick="findBMRCancel" />
+	</TableRow>
+						    
+	<TableRow>
+	<TextView
+		android:id="@+id/findBMRResultLabel"
+		android:textStyle="bold"
+		android:background="#EEFFBB"
+		android:text="Result:" />
+	<TextView
+		android:id="@+id/findBMRResult"
+		android:textStyle="bold"
+		android:layout_span="4" />
+	</TableRow>
+
+</TableLayout>

@@ -1,0 +1,71 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:stretchColumns="1"
+  tools:context=".RemoveUsereatsMealFragment">
+  <TableRow>
+  <TextView
+    android:id="@+id/removeUsereatsMealmealIdLabel"
+    android:textStyle="bold"
+    android:background="#EEFFBB"
+    android:text="MealId:" />
+  <EditText
+    android:id="@+id/removeUsereatsMealmealIdField"
+    android:layout_span="4" />
+  </TableRow>
+  <TableRow>
+  <TextView
+    android:id="@+id/removeUsereatsMealuserNameLabel"
+    android:textStyle="bold"
+    android:background="#EEFFBB"
+    android:text="UserName:" />
+  <EditText
+    android:id="@+id/removeUsereatsMealuserNameField"
+    android:layout_span="4" />
+  </TableRow>
+ <TableRow>
+  <TextView
+    android:id="@+id/removeUsereatsMealmealIdSpinnerLabel"
+    android:textStyle="bold"
+    android:background="#EEFFBB"
+    android:text="Meal:" />
+<Spinner
+  android:id="@+id/removeUsereatsMealmealIdSpinner"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content" 
+  android:layout_span="4" />
+ </TableRow>
+ <TableRow>
+  <TextView
+    android:id="@+id/removeUsereatsMealuserNameSpinnerLabel"
+    android:textStyle="bold"
+    android:background="#EEFFBB"
+    android:text="User:" />
+<Spinner
+  android:id="@+id/removeUsereatsMealuserNameSpinner"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content" 
+  android:layout_span="4" />
+ </TableRow>
+ <TableRow>
+  <Button
+    android:id="@+id/removeUsereatsMealOK"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_column="1"
+    android:background="#AAAAFF"
+    android:text="OK"
+    android:onClick="removeUsereatsMealOK"
+    />
+  <Button
+    android:id="@+id/removeUsereatsMealCancel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_column="3"
+    android:background="#FFAAAA"
+    android:text="Cancel"
+    android:onClick="removeUsereatsMealCancel"
+    />
+ </TableRow>
+</TableLayout>
