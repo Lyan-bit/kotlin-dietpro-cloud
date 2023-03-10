@@ -145,6 +145,11 @@ class UserBean(c: Context) {
 
    fun isAddUsereatsMealError(): Boolean {
         errors.clear()
+	if (mealId != "") {
+	//ok
+	}
+	else
+	   errors.add("mealId cannot be empty")
         return errors.size > 0
     }
 
@@ -155,6 +160,11 @@ class UserBean(c: Context) {
     
    fun isRemoveUsereatsMealError(): Boolean {
         errors.clear()
+	if (userName != "") {
+	//ok
+	}
+	else
+	   errors.add("userName cannot be empty")
         return errors.size > 0
     }
 
