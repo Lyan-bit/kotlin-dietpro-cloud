@@ -275,7 +275,7 @@ class ModelFacade private constructor(context: Context) {
 		
 
 	    	fun listMeal(): ArrayList<MealVO> {
-		  val meals: ArrayList<Meal> = Meal.MealAllInstances
+		  val meals: ArrayList<Meal> = Meal.mealAllInstances
 		  currentMeals.clear()
 		  for (i in meals.indices) {
 		       currentMeals.add(MealVO(meals[i]))
@@ -285,7 +285,7 @@ class ModelFacade private constructor(context: Context) {
 	}
 	
 	fun listAllMeal(): ArrayList<Meal> {
-		  val meals: ArrayList<Meal> = Meal.MealAllInstances    
+		  val meals: ArrayList<Meal> = Meal.mealAllInstances
 		  return meals
 	}
 	
@@ -300,7 +300,7 @@ class ModelFacade private constructor(context: Context) {
     }
 
     fun getMealByPK(value: String): Meal? {
-        return Meal.MealIndex[value]
+        return Meal.mealIndex[value]
     }
     
     fun retrieveMeal(value: String): Meal? {
