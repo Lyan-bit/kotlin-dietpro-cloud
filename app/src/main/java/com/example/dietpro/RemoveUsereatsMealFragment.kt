@@ -86,10 +86,10 @@ class RemoveUsereatsMealFragment : Fragment(), View.OnClickListener, AdapterView
 
     override fun onItemSelected(parent: AdapterView<*>, v: View?, position: Int, id: Long) {
         if (parent === mealIdSpinner) {
-	            mealIdTextField.setText(allMealmealIds.get(position))
+	            mealIdTextField.setText(allMealmealIds[position])
 	        }
 	    if (parent ==userNameSpinner) {
-	            userNameTextField.setText(allUseruserNames.get(position))
+	            userNameTextField.setText(allUseruserNames[position])
 	        }
     }
 
