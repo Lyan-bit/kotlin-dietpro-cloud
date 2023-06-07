@@ -14,7 +14,7 @@ class MealDAO {
             if (command != null) {
                 res += command
             }
-            if (pars.size == 0) {
+            if (pars..isEmpty()) {
                 return res
             }
             res = "$res?"
@@ -30,12 +30,12 @@ class MealDAO {
         }
 
         fun isCached(id: String?): Boolean {
-            Meal.mealIndex.get(id) ?: return false
+            Meal.mealIndex[id] ?: return false
             return true
         }
 
         fun getCachedInstance(id: String): Meal? {
-            return Meal.mealIndex.get(id)
+            return Meal.mealIndex[id]
         }
 
       fun parseCSV(line: String?): Meal? {
@@ -43,7 +43,7 @@ class MealDAO {
               return null
           }
           val line1vals: ArrayList<String> = Ocl.tokeniseCSV(line)
-          var mealx: Meal? = Meal.mealIndex.get(line1vals[0])
+          var mealx: Meal? = Meal.mealIndex[line1vals[0]]
           if (mealx == null) {
               mealx = Meal.createByPKMeal(line1vals[0])
           }
@@ -63,7 +63,7 @@ class MealDAO {
                 null
             } else try {
                 val id = obj.getString("mealId")
-                var mealx: Meal? = Meal.mealIndex.get(id)
+                var mealx: Meal? = Meal.mealIndex[id]
                 if (mealx == null) {
                     mealx = Meal.createByPKMeal(id)
                 }
@@ -88,7 +88,7 @@ class MealDAO {
           val rows: ArrayList<String> = Ocl.parseCSVtable(lines)
           for (item in rows.indices) {
               val row = rows[item]
-              if (row == null || row.trim { it <= ' ' }.length == 0) {
+              if (row == null || row.trim { it <= ' ' }.isEmpty()) {
                   //check
               } else {
                   val x: Meal? = parseCSV(row)
@@ -148,7 +148,7 @@ class MealDAO {
             try {
                 val map = obj as HashMap<String, Object>
                 val id: String = map["mealId"].toString()
-                var mealx: Meal? = Meal.mealIndex.get(id)
+                var mealx: Meal? = Meal.mealIndex[id]
                 if (mealx == null) {
                     mealx = Meal.createByPKMeal(id)
                 }
