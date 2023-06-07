@@ -45,7 +45,7 @@ class User {
     var bmr = 0.0  /* derived */
 	    fun calculateBMR() : Double {
 		
-		var result = 0.0
+		var result : Double
 				        if (gender == "male") {
 					            bmr  = 66.5 + (13 * weights) + (5 * heights) - (6.76 * age)
 				        } else {
@@ -56,7 +56,7 @@ class User {
 		             
 }				    fun calculateTargetCalories() : Double {
 		
-		var result = 0.0
+		var result : Double
 				        if (activityLevel == "low") {
 					            targetCalories  = bmr * 1.375
 				        } else {
