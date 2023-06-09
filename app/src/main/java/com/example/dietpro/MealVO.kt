@@ -4,13 +4,13 @@ import java.util.ArrayList
 
 class MealVO  {
 
-    private var mealId: String = ""
-    private var mealName: String = ""
-    private var calories: Double = 0.0
-    private var dates: String = ""
-    private var images: String = ""
-    private var analysis: String = ""
-    private var userName: String = ""
+     var mealId: String = ""
+     var mealName: String = ""
+     var calories: Double = 0.0
+     var dates: String = ""
+     var images: String = ""
+     var analysis: String = ""
+     var userName: String = ""
 
     constructor() {
     	//constructor
@@ -53,63 +53,6 @@ class MealVO  {
             res.add(list[i].toString())
         }
         return res
-    }
-    
-    fun getMealId(): String {
-        return mealId
-    }
-    
-    fun getMealName(): String {
-        return mealName
-    }
-    
-    fun getCalories(): Double {
-        return calories
-    }
-    
-    fun getDates(): String {
-        return dates
-    }
-    
-    fun getImages(): String {
-        return images
-    }
-    
-    fun getAnalysis(): String {
-        return analysis
-    }
-    
-    fun getUserName(): String {
-        return userName
-    }
-    
-
-    fun setMealId(x: String) {
-    	mealId = x
-    }
-    
-    fun setMealName(x: String) {
-    	mealName = x
-    }
-    
-    fun setCalories(x: Double) {
-    	calories = x
-    }
-    
-    fun setDates(x: String) {
-    	dates = x
-    }
-    
-    fun setImages(x: String) {
-    	images = x
-    }
-    
-    fun setAnalysis(x: String) {
-    	analysis = x
-    }
-    
-    fun setUserName(x: String) {
-    	userName = x
     }
     
 }
