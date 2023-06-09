@@ -4,15 +4,15 @@ import java.util.ArrayList
 
 class UserVO  {
 
-    private var userName: String = ""
-    private var gender: String = ""
-    private var heights: Double = 0.0
-    private var weights: Double = 0.0
-    private var activityLevel: String = ""
-    private var age: Double = 0.0
-    private var targetCalories: Double = 0.0
-    private var totalConsumedCalories: Double = 0.0
-    private var bmr: Double = 0.0
+     var userName: String = ""
+     var gender: String = ""
+     var heights: Double = 0.0
+     var weights: Double = 0.0
+     var activityLevel: String = ""
+     var age: Double = 0.0
+     var targetCalories: Double = 0.0
+     var totalConsumedCalories: Double = 0.0
+     var bmr: Double = 0.0
 
     constructor() {
     	//constructor
@@ -61,79 +61,6 @@ class UserVO  {
             res.add(list[i].toString())
         }
         return res
-    }
-    
-    fun getUserName(): String {
-        return userName
-    }
-    
-    fun getGender(): String {
-        return gender
-    }
-    
-    fun getHeights(): Double {
-        return heights
-    }
-    
-    fun getWeights(): Double {
-        return weights
-    }
-    
-    fun getActivityLevel(): String {
-        return activityLevel
-    }
-    
-    fun getAge(): Double {
-        return age
-    }
-    
-    fun getTargetCalories(): Double {
-        return targetCalories
-    }
-    
-    fun getTotalConsumedCalories(): Double {
-        return totalConsumedCalories
-    }
-    
-    fun getBmr(): Double {
-        return bmr
-    }
-    
-
-    fun setUserName(x: String) {
-    	userName = x
-    }
-    
-    fun setGender(x: String) {
-    	gender = x
-    }
-    
-    fun setHeights(x: Double) {
-    	heights = x
-    }
-    
-    fun setWeights(x: Double) {
-    	weights = x
-    }
-    
-    fun setActivityLevel(x: String) {
-    	activityLevel = x
-    }
-    
-    fun setAge(x: Double) {
-    	age = x
-    }
-    
-    fun setTargetCalories(x: Double) {
-    	targetCalories = x
-    }
-    
-    fun setTotalConsumedCalories(x: Double) {
-    	totalConsumedCalories = x
-    }
-    
-    fun setBmr(x: Double) {
-    	bmr = x
     }
     
 }
