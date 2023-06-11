@@ -55,7 +55,7 @@ class FirebaseDB() {
 
     fun persistMeal(ex: Meal) {
         val evo = MealVO(ex)
-        val key = evo.getMealId()
+        val key = evo.mealId
         if (database == null) {
             return
         }
