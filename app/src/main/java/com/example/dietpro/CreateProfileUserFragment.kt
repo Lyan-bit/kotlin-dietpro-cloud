@@ -82,21 +82,21 @@ class CreateProfileUserFragment : Fragment(), View.OnClickListener {
 		
             val user = model.getUser()
 
-            if (user != null) {
-						userNameTextField.setText(user.getUserName().toString())
-			genderTextField.setText(user.getGender().toString())
-			heightsTextField.setText(user.getHeights().toString())
-			weightsTextField.setText(user.getWeights().toString())
-			ageTextField.setText(user.getAge().toString())
-			activityLevelTextField.setText(user.getActivityLevel().toString())
-	targetCaloriesTextView.text = user.getTargetCalories().toString()
-	totalConsumedCaloriesTextView.text = user.getTotalConsumedCalories().toString()
-	bmrTextView.text = user.getBmr().toString()
-	
+		if (user != null) {
+			userNameTextField.setText(user.userName.toString())
+			genderTextField.setText(user.gender.toString())
+			heightsTextField.setText(user.heights.toString())
+			weightsTextField.setText(user.weights.toString())
+			ageTextField.setText(user.age.toString())
+			activityLevelTextField.setText(user.activityLevel.toString())
+			targetCaloriesTextView.text = user.targetCalories.toString()
+			totalConsumedCaloriesTextView.text = user.totalConsumedCalories.toString()
+			bmrTextView.text = user.bmr.toString()
+
 			createUserButton.setText("Edit")
-			
-	            	
-     	  }
+
+
+		}
       
       userBean = UserBean(myContext)
 	  return root
