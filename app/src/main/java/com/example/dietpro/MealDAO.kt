@@ -14,7 +14,7 @@ class MealDAO {
             if (command != null) {
                 res += command
             }
-            if (pars..isEmpty()) {
+            if (pars.isEmpty()) {
                 return res
             }
             res = "$res?"
@@ -42,7 +42,7 @@ class MealDAO {
           if (line == null) {
               return null
           }
-          val line1vals: ArrayList<String> = Ocl.tokeniseCSV(line)
+          val line1vals: List<String> = Ocl.tokeniseCSV(line)
           var mealx: Meal? = Meal.mealIndex[line1vals[0]]
           if (mealx == null) {
               mealx = Meal.createByPKMeal(line1vals[0])
@@ -85,7 +85,7 @@ class MealDAO {
           if (lines == null) {
               return result
           }
-          val rows: ArrayList<String> = Ocl.parseCSVtable(lines)
+          val rows: List<String> = Ocl.parseCSVtable(lines)
           for (item in rows.indices) {
               val row = rows[item]
               if (row == null || row.trim { it <= ' ' }.isEmpty()) {
