@@ -39,18 +39,18 @@ class ModelFacade private constructor(context: Context) {
 	}
 				    
     fun editMeal(x: MealVO) {
-		var obj = getMealByPK(x.getMealId())
+		var obj = getMealByPK(x.mealId)
 		if (obj == null) {
-			obj = Meal.createByPKMeal(x.getMealId())
+			obj = Meal.createByPKMeal(x.mealId)
 		}
 			
-		  obj.mealId = x.getMealId()
-		  obj.mealName = x.getMealName()
-		  obj.calories = x.getCalories()
-		  obj.dates = x.getDates()
-		  obj.images = x.getImages()
-		  obj.analysis = x.getAnalysis()
-		  obj.userName = x.getUserName()
+		  obj.mealId = x.mealId
+		  obj.mealName = x.mealName
+		  obj.calories = x.calories
+		  obj.dates = x.dates
+		  obj.images = x.images
+		  obj.analysis = x.analysis
+		  obj.userName = x.userName
 		cdb.persistMeal(obj)
 		currentMeal = x
 	}
@@ -70,16 +70,16 @@ class ModelFacade private constructor(context: Context) {
     fun searchMealByDate(dates: String) : ArrayList<Meal> {
 			var itemsList = ArrayList<Meal>()
 			for (x in currentMeals.indices) {
-				if ( currentMeals[x].getDates() == dates) {
+				if ( currentMeals[x].dates == dates) {
 					val vo: MealVO = currentMeals[x]
-				    val itemx = Meal.createByPKMeal(vo.getMealId())
-	            itemx.mealId = vo.getMealId()
-            itemx.mealName = vo.getMealName()
-            itemx.calories = vo.getCalories()
-            itemx.dates = vo.getDates()
-            itemx.images = vo.getImages()
-            itemx.analysis = vo.getAnalysis()
-            itemx.userName = vo.getUserName()
+				    val itemx = Meal.createByPKMeal(vo.mealId)
+	            itemx.mealId = vo.mealId
+            itemx.mealName = vo.mealName
+            itemx.calories = vo.calories
+            itemx.dates = vo.dates
+            itemx.images = vo.images
+            itemx.analysis = vo.analysis
+            itemx.userName = vo.userName
 					itemsList.add(itemx)
 				}
 			}
@@ -90,7 +90,7 @@ class ModelFacade private constructor(context: Context) {
 	fun searchMealByDate(): ArrayList<String> {
 		val res: ArrayList<String> = ArrayList()
 		for (x in currentMeals.indices) {
-			res.add(currentMeals[x].getDates().toString())
+			res.add(currentMeals[x].dates.toString())
 		}
 		return res
 	}
@@ -190,18 +190,18 @@ class ModelFacade private constructor(context: Context) {
 		fun listAllUser(): ArrayList<User> {	
 			currentUsers = listUser()
 			var res = ArrayList<User>()
-				for (x in currentUsers.indices) {
-						val vo: UserVO = currentUsers[x]
-					    val itemx = User.createByPKUser(vo.getUserName())
-		            itemx.userName = vo.getUserName()
-            itemx.gender = vo.getGender()
-            itemx.heights = vo.getHeights()
-            itemx.weights = vo.getWeights()
-            itemx.activityLevel = vo.getActivityLevel()
-            itemx.age = vo.getAge()
-            itemx.targetCalories = vo.getTargetCalories()
-            itemx.totalConsumedCalories = vo.getTotalConsumedCalories()
-            itemx.bmr = vo.getBmr()
+			for (x in currentUsers.indices) {
+				val vo: UserVO = currentUsers[x]
+				val itemx = User.createByPKUser(vo.userName)
+				itemx.userName = vo.userName
+				itemx.gender = vo.gender
+				itemx.heights = vo.heights
+				itemx.weights = vo.weights
+				itemx.activityLevel = vo.activityLevel
+				itemx.age = vo.age
+				itemx.targetCalories = vo.targetCalories
+				itemx.totalConsumedCalories = vo.totalConsumedCalories
+				itemx.bmr = vo.bmr
 				res.add(itemx)
 			}
 			return res
@@ -221,18 +221,18 @@ class ModelFacade private constructor(context: Context) {
 		        return if (res.isEmpty()) {
 		            null
 		        } else {
-		            val vo: UserVO = res[0]
-		            val itemx = User.createByPKUser(value)
-	            itemx.userName = vo.getUserName()
-            itemx.gender = vo.getGender()
-            itemx.heights = vo.getHeights()
-            itemx.weights = vo.getWeights()
-            itemx.activityLevel = vo.getActivityLevel()
-            itemx.age = vo.getAge()
-            itemx.targetCalories = vo.getTargetCalories()
-            itemx.totalConsumedCalories = vo.getTotalConsumedCalories()
-            itemx.bmr = vo.getBmr()
-		            itemx
+					val vo: UserVO = res[0]
+					val itemx = User.createByPKUser(value)
+					itemx.userName = vo.userName
+					itemx.gender = vo.gender
+					itemx.heights = vo.heights
+					itemx.weights = vo.weights
+					itemx.activityLevel = vo.activityLevel
+					itemx.age = vo.age
+					itemx.targetCalories = vo.targetCalories
+					itemx.totalConsumedCalories = vo.totalConsumedCalories
+					itemx.bmr = vo.bmr
+					itemx
 		        }
 	    }
 	    
@@ -244,7 +244,7 @@ class ModelFacade private constructor(context: Context) {
 	        currentUsers = listUser()
 	        val res: ArrayList<String> = ArrayList()
 	            for (user in currentUsers.indices) {
-	                res.add(currentUsers[user].getUserName())
+	                res.add(currentUsers[user].userName)
 	            }
 	        return res
 	    }
@@ -302,7 +302,7 @@ class ModelFacade private constructor(context: Context) {
     fun allMealMealIds(): ArrayList<String> {
         val res: ArrayList<String> = ArrayList()
             for (x in currentMeals.indices) {
-                res.add(currentMeals[x].getMealId())
+                res.add(currentMeals[x].mealId)
             }
         return res
     }
