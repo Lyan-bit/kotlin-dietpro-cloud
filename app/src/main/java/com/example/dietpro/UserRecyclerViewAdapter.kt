@@ -25,15 +25,15 @@ class UserRecyclerViewAdapter (items: List<UserVO>, listener: ListUserFragment.O
     @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: UserViewHolder, position: Int) {
         holder.mItem = mValues[position]
-        holder.listUserUserNameView.text = " " + mValues[position].getUserName() + " "
-        holder.listUserGenderView.text = " " + mValues[position].getGender() + " "
-        holder.listUserHeightsView.text = " " + mValues[position].getHeights() + " "
-        holder.listUserWeightsView.text = " " + mValues[position].getWeights() + " "
-        holder.listUserActivityLevelView.text = " " + mValues[position].getActivityLevel() + " "
-        holder.listUserAgeView.text = " " + mValues[position].getAge() + " "
-        holder.listUserTargetCaloriesView.text = " " + mValues[position].getTargetCalories() + " "
-        holder.listUserTotalConsumedCaloriesView.text = " " + mValues[position].getTotalConsumedCalories() + " "
-        holder.listUserBmrView.text = " " + mValues[position].getBmr() + " "
+        holder.listUserUserNameView.text = " " + mValues[position].userName + " "
+        holder.listUserGenderView.text = " " + mValues[position].gender + " "
+        holder.listUserHeightsView.text = " " + mValues[position].heights + " "
+        holder.listUserWeightsView.text = " " + mValues[position].weights + " "
+        holder.listUserActivityLevelView.text = " " + mValues[position].activityLevel + " "
+        holder.listUserAgeView.text = " " + mValues[position].age + " "
+        holder.listUserTargetCaloriesView.text = " " + mValues[position].targetCalories + " "
+        holder.listUserTotalConsumedCaloriesView.text = " " + mValues[position].totalConsumedCalories + " "
+        holder.listUserBmrView.text = " " + mValues[position].bmr + " "
 
         holder.mView.setOnClickListener { mListener.onListUserFragmentInteraction(holder.mItem) }
     }
